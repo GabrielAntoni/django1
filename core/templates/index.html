@@ -8,5 +8,22 @@
     <h1>index</h1>
     <h2>{{Nome}}</h2>
     <h2>{{Idade}}</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome Do Curso</th>
+                <th>Duração do Curso</th>
+            </tr>
+        </thead>
+        <thead>
+        {% for Certificado in Certificados %}
+            <tr>
+                <td><a href= {{Certificado.LinkCert}} > {{Certificado.nomeCert }}</a></td>
+                <td>{{ Certificado.duracaoCert }}</td>
+            </tr>
+        {% endfor %}
+        </thead>
+    </table>
+
 </body>
 </html>
