@@ -10,8 +10,12 @@ def index(request):
     Certificados = Certificado.objects.all()
 
     Apresentação = {
-        'Nome': 'Nome: Gabriel Antoni de Moraes Souza',
-        'Idade': 'Idade: 25',
+        'Nome': 'Gabriel Antoni de Moraes Souza',
+        'objetivo': 'Desenvolvedor Backend',
+        'email': 'gabriel.a.m.souza@hotmail.com',
+        'numero': '(91) 918568-9439',
+        'git': 'https://github.com/GabrielAntoni',
+
         'Certificados': Certificados
     }
     return render(request, 'index.html',Apresentação)
